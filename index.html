@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Piggy Paradise 🐷</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;700&family=Comic+Neue:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="piggy-world">
+      <!-- Floating clouds for background -->
+      <div class="cloud cloud-1"></div>
+      <div class="cloud cloud-2"></div>
+      <div class="cloud cloud-3"></div>
+
+      <div class="game-container">
+        <header>
+          <h1>🐷 Piggy Paradise</h1>
+          <p>Roll, Score, and Oink Your Way to Victory!</p>
+        </header>
+
+        <div class="players-container">
+          <!-- Player 1 -->
+          <div class="player player--0 player--active">
+            <div class="player-card">
+              <div class="player-crown">👑 WINNER!</div>
+              <div class="winner-symbol">🏆</div>
+              <h2 class="player-name" id="name--0">Player 1</h2>
+              <div class="piggy-avatar">
+                <div class="piggy-face">
+                  <div class="piggy-ear piggy-ear-left"></div>
+                  <div class="piggy-ear piggy-ear-right"></div>
+                  <div class="piggy-snout"></div>
+                  <div class="piggy-eye piggy-eye-left"></div>
+                  <div class="piggy-eye piggy-eye-right"></div>
+                </div>
+              </div>
+              <div class="player-score" id="score--0">0</div>
+              <div class="current-box">
+                <p>Current</p>
+                <p class="current-score" id="current--0">0</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Game Controls -->
+          <div class="game-controls">
+            <button class="btn btn--new">
+              <i class="fas fa-redo"></i> New Game
+            </button>
+            <div class="dice-container">
+              <img src="./images/dice-1.png" alt="Dice" class="dice" />
+              <div class="dice-shadow"></div>
+            </div>
+            <button class="btn btn--roll">
+              <i class="fas fa-dice"></i> Roll Dice
+            </button>
+            <button class="btn btn--hold">
+              <i class="fas fa-piggy-bank"></i> Hold
+            </button>
+          </div>
+
+          <!-- Player 2 -->
+          <div class="player player--1">
+            <div class="player-card">
+              <div class="player-crown">👑 WINNER!</div>
+              <div class="winner-symbol">🏆</div>
+              <h2 class="player-name" id="name--1">Player 2</h2>
+              <div class="piggy-avatar">
+                <div class="piggy-face">
+                  <div class="piggy-ear piggy-ear-left"></div>
+                  <div class="piggy-ear piggy-ear-right"></div>
+                  <div class="piggy-snout"></div>
+                  <div class="piggy-eye piggy-eye-left"></div>
+                  <div class="piggy-eye piggy-eye-right"></div>
+                </div>
+              </div>
+              <div class="player-score" id="score--1">0</div>
+              <div class="current-box">
+                <p>Current</p>
+                <p class="current-score" id="current--1">0</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="instructions">
+          <details>
+            <summary><i class="fas fa-info-circle"></i> How to Play</summary>
+            <ol>
+              <li>
+                🎲 <strong>Player 1 starts</strong> - Roll the dice to add its
+                value to your current <u>and</u> total score
+              </li>
+              <li>
+                🔄 <strong>Alternate turns</strong> - After each roll, the turn
+                automatically passes to the other player
+              </li>
+              <li>
+                ☠️ <strong>Rolling a 1</strong> - You lose just that turn's
+                chance (no score penalty), and the turn passes
+              </li>
+              <li>
+                💾 <strong>HOLD anytime</strong> - Keep your accumulated score
+                and voluntarily pass the turn
+              </li>
+              <li>
+                🏆 <strong>Winning</strong> - First player to reach the target
+                score (default: 50) wins instantly!
+              </li>
+              <li>
+                ⚠️ <strong>Note</strong> - Scores are cumulative - each roll
+                adds to both current <i>and</i> total scores
+              </li>
+            </ol>
+          </details>
+        </div>
+      </div>
+    </div>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
