@@ -13,7 +13,8 @@ Piggy Paradise is a js-based idle clicker game where you build your own pig empi
 - Responsive layout
 
 ## 📸 Screenshots
-(./screenshots/ui.png)
+![Game UI](./screenshots/ui.png)
+![playing game moment](./screenshots/gameplay.png)
 
 ## 💡 Why I Built This
 To explore game logic in javascript and build a fun, interactive front-end project with basic state management and visual feedback loops.
